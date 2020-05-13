@@ -79,16 +79,18 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        {
-          this.state.employees.map((employee) => {
-            //console.log(employee)
-            return (
-              <EmployeeList
-                person={employee}
-              />
-            )
-          })
-        }
+        <div className="flex-wrap">
+          {
+            this.state.employees.map((employee) => {
+              //console.log(employee)
+              return (
+                <EmployeeList
+                  person={employee}
+                />
+              )
+            })
+          }
+        </div>
       </div >
     );
   }
