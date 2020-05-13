@@ -1,4 +1,4 @@
-# Budget Tracker ![react badge](https://img.shields.io/static/v1?label=node.js&message=enabled&color=success)![MongoDB](https://img.shields.io/static/v1?label=MongoDB&message=enabled&color=success)
+# Employee Directory ![react badge](https://img.shields.io/static/v1?label=node.js&message=enabled&color=success)![MongoDB](https://img.shields.io/static/v1?label=MongoDB&message=enabled&color=success)
 
 ## Description
 This is an employee directory, created with React. 
@@ -40,3 +40,11 @@ Manually tested.  No additinal frameworks used.
 
 ## Demo
 This page is hosted on Github Pages : [https://brian-fairbanks.github.io/ReactEmployeeDir/](https://brian-fairbanks.github.io/ReactEmployeeDir/)
+
+View on a Mobile Display:
+
+![smallDisplay](https://github.com/Brian-Fairbanks/ReactEmployeeDir/blob/master/assets/mobileDisplay.PNG?raw=true)
+
+View on a Large Display: 
+![largeDisplay](https://github.com/Brian-Fairbanks/ReactEmployeeDir/blob/master/assets/largeDisplay.PNG?raw=true)
+
