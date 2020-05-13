@@ -18,3 +18,17 @@
 .fas:hover{
   color:#fff;
 }
+
+.personThumb{
+  position:absolute;
+  top:-36px;
+  left:10px;
+  border-radius:100%;
+  box-shadow:0 0 3px rgba(0,0,0,1)
+}
+
+.personCard{
+  padding-top:30px;
+  width:300px;
+  border-left:7px solid #0000ff;
+}
