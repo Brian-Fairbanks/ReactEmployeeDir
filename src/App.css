@@ -1,18 +1,11 @@
 .App {
   text-align: center;
+  background:#C2EFEB;
 }
 
 .header{
-  background:#99BBff
-}
-
-.employee-row:nth-of-type(2n){
-  background:#ddeeff;
-}
-
-.smlabel{
-  font-weight:bold;
-  margin-right:20px;
+  background:#41337A;
+  color: #ECFEE8;
 }
 
 .fas:hover{
@@ -24,11 +17,15 @@
   top:-36px;
   left:10px;
   border-radius:100%;
-  box-shadow:0 0 3px rgba(0,0,0,1)
+  box-shadow:0 0 3px 2px #FFFFFF;
 }
 
 .personCard{
-  padding-top:30px;
+  text-align:left;
+  padding-top:38px;
   width:300px;
-  border-left:7px solid #0000ff;
+  border-left:7px solid #6EA4BF;
+  background:#ECFEE8;
+  color:#331E36;
+  box-shadow:4px 2px 10px -4px #331E36;
 }

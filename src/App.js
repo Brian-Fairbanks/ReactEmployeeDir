@@ -32,7 +32,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="App container">
         <div>
           <input type="text" placeholder="Search" onChange={(e) => this.searchFilter(e.target.value)}/>
           <div className="header row flex h4 my-0 p-0 py-2">
