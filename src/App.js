@@ -13,11 +13,18 @@ class App extends React.Component {
   }
 
   handleNameSort = (name, order) => {
-    this.setState({ employees: employees.sort((a, b) => (a.name[name] > b.name[name] ? order : -order)) });
+    this.setState({ employees: this.state.employees.sort((a, b) => (a.name[name] > b.name[name] ? order : -order)) });
   }
 
   handleSort = (name, order) => {
-    this.setState({ employees: employees.sort((a, b) => (a[name] > b[name] ? order : -order)) });
+    this.setState({ employees: this.state.employees.sort((a, b) => (a[name] > b[name] ? order : -order)) });
+  }
+
+  searchFilter = (name) => {
+    this.setState({employees:employees.filter(person => {
+      return person.name.first.toLowerCase().includes(name.toLowerCase())
+      || person.name.last.toLowerCase().includes(name.toLowerCase())
+    })})
   }
 
 
@@ -25,6 +32,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <div>
+          <input type="text" placeholder="Search" onChange={(e) => this.searchFilter(e.target.value)}/>
           <div className="header row flex h4 my-0 p-0 py-2">
             <div className="col">
               <div className="d-inline">
