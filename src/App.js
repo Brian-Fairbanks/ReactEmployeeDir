@@ -40,8 +40,8 @@ class App extends React.Component {
       <div className="App">
         <div className="header">
           <div className="container py-3 text-center">
-            <input type="text" placeholder="Search" onChange={(e) => this.searchFilter(e.target.value)} />
-            <div className="filter d-flex justify-content-around h4">
+            <input type="text" placeholder="Search" className="form-control text-center" onChange={(e) => this.searchFilter(e.target.value)} />
+            <div className="filter d-flex justify-content-between h4">
               <div className="">
                 First Name
                 <i className={this.state.first > 0 ? "fas fa-sort-amount-down-alt" : "fas fa-sort-amount-up-alt"}
