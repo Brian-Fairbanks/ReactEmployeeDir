@@ -24,6 +24,7 @@ class App extends React.Component {
     this.setState({employees:employees.filter(person => {
       return person.name.first.toLowerCase().includes(name.toLowerCase())
       || person.name.last.toLowerCase().includes(name.toLowerCase())
+      || person.phone.includes(name)
     })})
   }
 
