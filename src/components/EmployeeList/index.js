@@ -1,15 +1,18 @@
 import React from "react";
 
 function EmployeeList(props) {
-  console.log(props);
+  // console.log(props);
   return (
-    <div className="employee-row row d-flex flex-column flex-md-row py-2" key={props.person.id.value}>
-      <div className="col"><span className="d-inline d-md-none smlabel">First Name:</span>{props.person.name.first}</div>
-      <div className="col"><span className="d-inline d-md-none smlabel">Last Name:</span>{props.person.name.last}</div>
-      <div className="col"><span className="d-inline d-md-none smlabel">DOB:</span>{props.person.dob.date.split("T")[0]}</div>
-      <div className="col"><span className="d-inline d-md-none smlabel">Gender:</span>{props.person.gender}</div>
-      <div className="col"><span className="d-inline d-md-none smlabel">Phone:</span>{props.person.phone}</div>
-      <div className="col"><span className="d-inline d-md-none smlabel">Email:</span>{props.person.email}</div>
+    <div className="personCard card mt-5" key={props.person.id.value}>
+      <div><img className="personThumb" src={props.person.picture.medium} alt={props.person.name.first + props.person.name.last}/></div>
+      <div className="col h5">{props.person.name.first} {props.person.name.last}</div>
+      <div className="col"> <i className="blue fas fa-birthday-cake"></i> {props.person.dob.date.split("T")[0]}</div>
+      <hr/>
+      <div className="col"> <i className="blue fas fa-venus-mars"></i> {props.person.gender}</div>
+      <hr/>
+      <div className="col"> <i className="blue fas fa-phone"></i> {props.person.phone}</div>
+      <hr/>
+      <div className="col"> <i className="blue fas fa-envelope"></i> {props.person.email}</div>
     </div>
   )
 }
